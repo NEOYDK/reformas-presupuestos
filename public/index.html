@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obra Fina · Reformas y pintura en Paraná — Sitio de demostración</title>
+  <meta name="description" content="Pintura, durlock, pisos, baños, techos y electricidad en Paraná. Calculá tu presupuesto en un minuto con materiales y mano de obra, y pedí la visita sin cargo. (Sitio de demostración)">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c2340">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Web para reformas y oficios: calculadora de presupuestos">
+  <meta property="og:description" content="Demo de web para empresas de reformas, pintores y electricistas de Paraná: el cliente calcula su presupuesto y el dueño arma presupuestos profesionales en PDF.">
+  <meta property="og:image" content="https://reformas-demo-ydk.pages.dev/assets/img/og.jpg?v=3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c2340'/%3E%3Cpath d='M12 50V26l20-14 20 14v24H38V36H26v14z' fill='none' stroke='%23ffd23f' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="/assets/fonts/inter-f11d729bb0.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/big-shoulders-display-caf8e2fb63.woff2" as="font" type="font/woff2" crossorigin>
+  <style data-fuentes>
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 800; font-display: swap; src: url(/assets/fonts/big-shoulders-display-b0801ec6a9.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 800; font-display: swap; src: url(/assets/fonts/big-shoulders-display-caf8e2fb63.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 900; font-display: swap; src: url(/assets/fonts/big-shoulders-display-b0801ec6a9.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 900; font-display: swap; src: url(/assets/fonts/big-shoulders-display-caf8e2fb63.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/jetbrains-mono-be0c59f306.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/jetbrains-mono-35c2a72b75.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  </style>
+  <link rel="stylesheet" href="lib/kit.css?v=20261022">
+  <link rel="stylesheet" href="styles.css?v=20261024">
+</head>
+<body>
+  <a class="skip-link" href="#calcular">Saltar a la calculadora</a>
+  <div class="k-progreso" aria-hidden="true"></div>
+  <div class="demo-bar" role="note">Sitio de demostración · Precios y datos de ejemplo</div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio" aria-label="Obra Fina, inicio">
+        <svg class="brand-ic" viewBox="0 0 64 64" aria-hidden="true"><path d="M10 52V26l22-15 22 15v26H39V37H25v15z"/></svg>
+        <span>Obra<b>Fina</b></span>
+      </a>
+      <nav class="nav-links" aria-label="Principal"><a href="#calcular">Calcular</a><a href="#trabajos">Qué hacemos</a><a href="#como">Cómo trabajamos</a><a href="#preguntas">Preguntas</a></nav>
+      <a class="btn btn-amarillo btn-sm" href="#calcular">Calcular precio</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Reformas · pintura · durlock · Paraná</p>
+          <h1 class="titulo"><span class="l1">Tu reforma,</span> <span class="l2">presupuestada al toque.</span></h1>
+          <p class="hero-sub">Calculá en un minuto cuánto sale pintar, levantar un tabique o cambiar el piso: <strong>un rango honesto con materiales y mano de obra</strong>. Después te visitamos sin cargo y te pasamos el presupuesto cerrado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-amarillo btn-lg" href="#calcular">Calcular mi presupuesto</a>
+            <a class="btn btn-line btn-lg" href="#trabajos">Qué hacemos</a>
+          </div>
+          <ul class="k-numeros" data-k aria-label="La empresa en números">
+            <li><b>1 min</b><span>para tu precio estimado</span></li>
+            <li><b>Sin cargo</b><span>la visita a tu casa</span></li>
+            <li><b data-k-cuenta="7" data-k-suf=" días">7 días</b><span>de validez del presupuesto</span></li>
+            <li><b>Por escrito</b><span>precio, plazo y garantía</span></li>
+          </ul>
+        </div>
+        <figure class="hoja-presu" data-k aria-label="Ejemplo de presupuesto">
+          <div class="hp-top"><b>Obra<span>Fina</span></b><small>Presupuesto N.º 0127</small></div>
+          <p class="hp-cli">Para: <b>Familia Ríos</b> · Barrio Parque · Paraná</p>
+          <ul class="hp-items">
+            <li style="--i:0"><span>Pintura interior látex 2 manos</span><em>86 m²</em><b>$ 653.600</b></li>
+            <li style="--i:1"><span>Enduido y lijado</span><em>22 m²</em><b>$ 112.200</b></li>
+            <li style="--i:2"><span>Tabique de durlock</span><em>9 m²</em><b>$ 234.000</b></li>
+            <li style="--i:3"><span>Retiro de escombros</span><em>1 viaje</em><b>$ 45.000</b></li>
+          </ul>
+          <p class="hp-total"><span>Total</span><b>$ 1.044.800</b></p>
+          <p class="hp-pie"><span>Válido 7 días</span><span>50% al empezar</span><span class="hp-sello">Aceptado ✓</span></p>
+        </figure>
+      </div>
+    </section>
+
+    <div class="tira" aria-hidden="true"><div class="tira-track"><span>Pintura</span><span>Durlock</span><span>Pisos</span><span>Baños</span><span>Techos</span><span>Electricidad</span><span>Pintura</span><span>Durlock</span><span>Pisos</span><span>Baños</span><span>Techos</span><span>Electricidad</span></div></div>
+
+    <!-- CALCULADORA -->
+    <section class="section" id="calcular">
+      <div class="container">
+        <header class="sec-head" data-k>
+          <p class="kicker">Calculadora</p>
+          <h2 class="titulo"><span class="l1">¿Cuánto sale</span> <span class="l2">tu reforma?</span></h2>
+          <p class="lead">Elegí lo que querés hacer, cargá las medidas en metros y mirá el precio estimado. Precios de ejemplo de Paraná: el cerrado te lo damos después de la visita.</p>
+        </header>
+        <div class="calc" data-calc>
+          <div class="calc-cargar">
+            <fieldset class="caja">
+              <legend class="caja-tit">1 · ¿Qué querés hacer?</legend>
+              <div class="trabajos" data-trabajos></div>
+            </fieldset>
+            <div data-medidas></div>
+            <fieldset class="caja">
+              <legend class="caja-tit">3 · Detalles</legend>
+              <div class="opciones" role="radiogroup" aria-label="Materiales">
+                <label><input type="radio" name="mat" value="con" checked><span>Con materiales</span></label>
+                <label><input type="radio" name="mat" value="sin"><span>Solo mano de obra</span></label>
+              </div>
+              <div class="opciones" role="radiogroup" aria-label="Calidad">
+                <label><input type="radio" name="calidad" value="estandar" checked><span>Calidad estándar</span></label>
+                <label><input type="radio" name="calidad" value="premium"><span>Primeras marcas</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="calc-res" aria-live="polite">
+            <div class="caja res">
+              <p class="caja-tit">Tu presupuesto estimado</p>
+              <ul class="res-lista" data-res-lista></ul>
+              <p class="res-vacio" data-res-vacio>Elegí al menos un trabajo para ver el precio.</p>
+              <div class="res-total" data-res-total hidden>
+                <p><small>Total estimado</small><b data-total>$ 0</b></p>
+                <p><small>Plazo</small><b data-plazo>—</b></p>
+              </div>
+              <p class="res-nota">Es un rango: el precio final depende del estado de las paredes, el acceso y los materiales que elijas. Lo confirmamos con la visita, sin cargo.</p>
+              <a class="btn btn-wa btn-block" href="#" data-pedir><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Pedir la visita sin cargo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUÉ HACEMOS -->
+    <section class="section section-alt" id="trabajos">
+      <div class="container">
+        <header class="sec-head" data-k>
+          <p class="kicker">Qué hacemos</p>
+          <h2 class="titulo"><span class="l1">Todo el trabajo,</span> <span class="l2">un solo equipo.</span></h2>
+        </header>
+        <div class="servicios">
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="13" height="6" rx="1.5"/><path d="M16 6h3v5h-8v3M10 14h2v7h-2z"/></svg><h3>Pintura</h3><p>Interior y frentes, con látex, esmalte o impermeabilizante. Cubrimos muebles y pisos y dejamos todo limpio.</p></article>
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v16H3zM9 4v16M15 4v16M3 12h18"/></svg><h3>Durlock</h3><p>Tabiques, cielorrasos, placares y muebles de placa. Rápido, limpio y listo para pintar.</p></article>
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z"/></svg><h3>Pisos y baños</h3><p>Cerámicos, porcelanatos y revestimientos. Baños y cocinas completos, con plomería incluida.</p></article>
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12 12 4l9 8M6 10v10h12V10"/><path d="M9 15c1.5-1 4.5-1 6 0"/></svg><h3>Techos</h3><p>Impermeabilización con membrana y reparación de filtraciones, con garantía por escrito.</p></article>
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4.5 13.5H11l-1 8.5 8.5-11.5H12z"/></svg><h3>Electricidad</h3><p>Bocas nuevas, tableros, disyuntor y puesta a tierra. Electricista matriculado.</p></article>
+          <article class="servicio" data-k><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20V9l6-4 6 4v11M10 20v-5h4v5"/></svg><h3>Reformas completas</h3><p>Coordinamos todos los gremios y te damos un solo presupuesto, un solo plazo y un solo responsable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO TRABAJAMOS -->
+    <section class="section" id="como">
+      <div class="container">
+        <header class="sec-head" data-k>
+          <p class="kicker">Cómo trabajamos</p>
+          <h2 class="titulo"><span class="l1">Sin sorpresas.</span> <span class="l2">Todo por escrito.</span></h2>
+        </header>
+        <ol class="pasos">
+          <li data-k><span>01</span><h3>Calculás</h3><p>Con la calculadora tenés una idea del precio antes de llamar a nadie.</p></li>
+          <li data-k><span>02</span><h3>Te visitamos</h3><p>Sin cargo: medimos, vemos el estado y te mandamos el presupuesto cerrado por WhatsApp.</p></li>
+          <li data-k><span>03</span><h3>Arrancamos</h3><p>Con la seña acordamos el día. Te avisamos el avance y entregamos con garantía.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PARA EL DUEÑO -->
+    <section class="section duenos" id="presupuestador">
+      <div class="container duenos-grid">
+        <div data-k>
+          <p class="kicker">¿Sos pintor, electricista o tenés una empresa de reformas?</p>
+          <h2 class="titulo izq"><span class="l1">Presupuestos</span> <span class="l2">en 2 minutos.</span></h2>
+          <p class="lead izq">Esta web viene con un presupuestador para el dueño: elegís los trabajos de tu lista de precios, ponés las cantidades y sale un presupuesto prolijo con tu logo, listo para mandar por WhatsApp o guardar en PDF.</p>
+          <ul class="duenos-lista">
+            <li>Tu lista de precios, con aumento de todo en un toque</li>
+            <li>Número, validez, forma de pago y plazo de obra</li>
+            <li>IVA opcional y descuento</li>
+            <li>Ves cuáles te aceptaron y a quién hacerle seguimiento</li>
+          </ul>
+          <a class="btn btn-amarillo btn-lg" href="presupuestador/">Probar el presupuestador →</a>
+          <p class="fine">Datos de ejemplo. Lo que cambies queda solo en tu navegador.</p>
+        </div>
+        <div class="duenos-vista" aria-hidden="true" data-k>
+          <div class="dv-kpis"><p><small>Presupuestado</small><b>$ 5,2 M</b></p><p><small>Aceptados</small><b>3 de 6</b></p><p><small>Para seguir</small><b>2</b></p></div>
+          <ul class="dv-lista">
+            <li><span>Baño completo · Ledesma</span><em class="acep">Aceptado</em></li>
+            <li><span>Pintura 3 ambientes · Ríos</span><em class="env">Enviado hace 3 días</em></li>
+            <li><span>Frente · Báez</span><em class="rech">No aceptó</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS -->
+    <section class="section section-alt" id="preguntas">
+      <div class="container angosto">
+        <header class="sec-head" data-k>
+          <p class="kicker">Preguntas</p>
+          <h2 class="titulo"><span class="l1">Lo que</span> <span class="l2">nos preguntan.</span></h2>
+        </header>
+        <div class="k-faq">
+          <details data-k><summary>¿El precio de la calculadora es el final?</summary><p>Es un rango para que tengas una idea. El precio cerrado te lo damos después de la visita, porque depende del estado de las paredes, el acceso y los materiales.</p></details>
+          <details data-k><summary>¿La visita tiene costo?</summary><p>No. Vamos, medimos y te mandamos el presupuesto por WhatsApp en 24 a 48 horas.</p></details>
+          <details data-k><summary>¿Cómo se paga?</summary><p>Con una seña del 50% para reservar la fecha y comprar materiales, y el resto al terminar. Efectivo, transferencia o Mercado Pago.</p></details>
+          <details data-k><summary>¿Dan garantía?</summary><p>Sí, por escrito: 6 meses en pintura y 1 año en impermeabilización y electricidad.</p></details>
+          <details data-k><summary>¿Trabajan en toda la ciudad?</summary><p>En Paraná, San Benito, Oro Verde y Colonia Avellaneda. Más lejos, consultanos.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="k-contacto" id="contacto">
+      <div class="k-in">
+        <p class="kicker">Contacto</p>
+        <h2 class="titulo" data-k><span class="l1">Contanos qué</span> <span class="l2">querés reformar.</span></h2>
+        <p data-k>Escribinos por WhatsApp o Instagram. Lunes a viernes de 8 a 18 h y sábados de 8 a 13 h, en Paraná y alrededores.</p>
+        <div class="k-botones" data-k>
+          <a class="k-btn k-btn-wa" href="#" data-wa-contacto><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></svg>Escribinos por WhatsApp</a>
+          <a class="k-btn k-btn-ig" href="https://www.instagram.com/ydk.exe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>Seguinos en Instagram</a>
+        </div>
+        <ul class="k-chips" data-k aria-label="Formas de pago"><li>Efectivo</li><li>Transferencia</li><li>Mercado Pago</li><li>Visita sin cargo</li></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Obra Fina · Demo · Paraná, Entre Ríos</p>
+      <p>¿Tenés una empresa de reformas o sos de un oficio y querés una web así? <a href="#" data-maker>Hablemos</a></p>
+    </div>
+  </footer>
+
+  <button class="chat-fab k-fab" type="button" data-open-chat data-k-tip="¿Dudas con tu reforma? Preguntame" aria-label="¿Dudas? Abrir el asistente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2z"/></svg></button>
+  <section class="chat" data-chat hidden aria-label="Asistente de Obra Fina">
+    <header class="chat-head"><div><p class="chat-name">Asistente de Obra Fina</p><p class="chat-status"><span class="punto" aria-hidden="true"></span> Responde al instante</p></div><button class="chat-close" type="button" data-close-chat aria-label="Cerrar">×</button></header>
+    <div class="chat-log" data-chat-log aria-live="polite"><p class="msg msg-bot">¡Hola! 🏠 Soy el asistente de Obra Fina. Te ayudo a calcular tu reforma y te cuento cómo trabajamos. ¿Qué querés hacer?</p></div>
+    <div class="chat-suggest" data-chat-suggest><button type="button">¿Cuánto sale pintar un depto?</button><button type="button">¿Dan garantía?</button><button type="button">¿Cuándo pueden venir?</button></div>
+    <form class="chat-form" data-chat-form><label class="sr-only" for="chat-input">Escribí tu consulta</label><input id="chat-input" autocomplete="off" maxlength="500" placeholder="Escribí tu consulta…"><button type="submit" aria-label="Enviar">→</button></form>
+    <a class="chat-wa" href="#calcular">Ir a la calculadora</a>
+  </section>
+
+  <script defer src="lib/manifest.js?v=20261022"></script>
+  <script defer src="lib/chat.js?v=20261022"></script>
+  <script defer src="lib/kit.js?v=20261022"></script>
+  <script defer src="precios.js?v=20261022"></script>
+  <script defer src="main.js?v=20261022"></script>
+</body>
+</html>

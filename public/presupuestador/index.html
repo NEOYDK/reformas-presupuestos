@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es-AR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Presupuestador · Obra Fina — Demo</title>
+  <meta name="description" content="Presupuestador de ejemplo para oficios y empresas de reformas: lista de precios, presupuestos en PDF, envío por WhatsApp y seguimiento.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0c2340">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c2340'/%3E%3Cpath d='M12 50V26l20-14 20 14v24H38V36H26v14z' fill='none' stroke='%23ffd23f' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="/assets/fonts/inter-f11d729bb0.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/big-shoulders-display-caf8e2fb63.woff2" as="font" type="font/woff2" crossorigin>
+  <style data-fuentes>
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 800; font-display: swap; src: url(/assets/fonts/big-shoulders-display-b0801ec6a9.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 800; font-display: swap; src: url(/assets/fonts/big-shoulders-display-caf8e2fb63.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 900; font-display: swap; src: url(/assets/fonts/big-shoulders-display-b0801ec6a9.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-weight: 900; font-display: swap; src: url(/assets/fonts/big-shoulders-display-caf8e2fb63.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-cf3eb50fb2.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url(/assets/fonts/inter-f11d729bb0.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/jetbrains-mono-be0c59f306.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(/assets/fonts/jetbrains-mono-35c2a72b75.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+  </style>
+  <link rel="stylesheet" href="presu.css?v=20261028a">
+</head>
+<body>
+  <a class="skip-link" href="#vista">Saltar al contenido</a>
+  <header class="top">
+    <a class="volver" href="../" aria-label="Volver a la web">←</a>
+    <p class="top-tit"><b>Obra<span>Fina</span></b> <small>Presupuestador</small></p>
+    <p class="top-demo">Datos de ejemplo</p>
+    <button class="top-reset" type="button" data-reset>Reiniciar<span class="chico-oculto"> demo</span></button>
+  </header>
+  <nav class="tabs" aria-label="Secciones">
+    <button type="button" data-tab="editar" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5"/></svg>Presupuesto</button>
+    <button type="button" data-tab="lista"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg>Mis presupuestos</button>
+    <button type="button" data-tab="precios"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8zM7.5 7.5h.01"/></svg>Precios</button>
+    <button type="button" data-tab="datos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-6 8 6v12H4zM9 21v-6h6v6"/></svg>Mis datos</button>
+  </nav>
+
+  <main id="vista" class="vista" tabindex="-1">
+    <!-- EDITAR -->
+    <section data-vista="editar" aria-labelledby="t-editar">
+      <div class="v-head"><h1 id="t-editar" class="v-tit">Presupuesto <span data-num>N.º 0000</span></h1>
+        <div class="v-acc"><button class="btn btn-line btn-sm" type="button" data-nuevo>+ Nuevo</button></div></div>
+      <div class="editor">
+        <form class="formu" data-formu novalidate autocomplete="off">
+          <fieldset class="caja">
+            <legend class="caja-tit">Cliente</legend>
+            <div class="dos-col">
+              <label class="campo"><span>Nombre</span><input name="cliente" maxlength="60" placeholder="Ej.: Gabriela Ríos"></label>
+              <label class="campo"><span>WhatsApp</span><input name="tel" inputmode="tel" maxlength="20" placeholder="343 4…"></label>
+            </div>
+            <label class="campo"><span>Obra / dirección</span><input name="obra" maxlength="80" placeholder="Ej.: Pintura depto · Barrio Parque"></label>
+            <div class="tres-col">
+              <label class="campo"><span>Fecha</span><input name="fecha" type="date"></label>
+              <label class="campo"><span>Validez (días)</span><input name="validez" type="number" inputmode="numeric" min="1" max="90"></label>
+              <label class="campo"><span>Estado</span><select name="estado"><option>Borrador</option><option>Enviado</option><option>Aceptado</option><option>Rechazado</option></select></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="caja">
+            <legend class="caja-tit">Trabajos</legend>
+            <div class="items-cab" aria-hidden="true"><span>Descripción</span><span>Unidad</span><span>Cant.</span><span>Precio</span><span>Subtotal</span><span></span></div>
+            <ol class="items" data-items></ol>
+            <div class="items-acc">
+              <label class="sr-only" for="desde-lista">Agregar un trabajo de la lista de precios</label>
+              <select id="desde-lista" data-desde-lista><option value="">+ Agregar de la lista de precios…</option></select>
+              <button class="btn btn-line btn-sm" type="button" data-item-libre>+ Ítem libre</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="caja">
+            <legend class="caja-tit">Condiciones</legend>
+            <div class="dos-col">
+              <label class="campo"><span>Descuento (%)</span><input name="descuento" type="number" inputmode="decimal" min="0" max="100" step="0.5"></label>
+              <label class="check"><input name="iva" type="checkbox"> <span>Sumar IVA 21%</span></label>
+            </div>
+            <label class="campo"><span>Forma de pago</span><select name="pago"><option>50% al empezar y 50% al terminar</option><option>30% al empezar, 40% a mitad de obra y 30% al terminar</option><option>Todo al terminar</option><option>Contado con 5% de descuento</option></select></label>
+            <label class="campo"><span>Plazo de obra</span><input name="plazo" maxlength="60" placeholder="Ej.: 5 días hábiles"></label>
+            <label class="campo"><span>Notas</span><textarea name="notas" rows="3" maxlength="400" placeholder="Ej.: Incluye cubrir muebles y limpieza final."></textarea></label>
+          </fieldset>
+        </form>
+
+        <div class="lado-hoja">
+          <div class="hoja-acc">
+            <a class="btn btn-wa" href="#" data-mandar><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Mandar por WhatsApp</a>
+            <button class="btn btn-amarillo" type="button" data-pdf>Imprimir o guardar PDF</button>
+          </div>
+          <p class="guardado" data-guardado aria-live="polite">Se guarda solo</p>
+          <article class="hoja" data-hoja aria-label="Vista previa del presupuesto"></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA -->
+    <section data-vista="lista" aria-labelledby="t-lista" hidden>
+      <h1 id="t-lista" class="v-tit">Mis presupuestos</h1>
+      <div class="kpis">
+        <article class="kpi"><p>Presupuestado este mes</p><b data-k="mes">$ 0</b><small data-k="mes-sub"></small></article>
+        <article class="kpi kpi-ok"><p>Aceptados</p><b data-k="acep">$ 0</b><small data-k="acep-sub"></small></article>
+        <article class="kpi"><p>Te aceptan</p><b data-k="tasa">—</b><small>de los que mandaste</small></article>
+        <article class="kpi kpi-alerta"><p>Para hacer seguimiento</p><b data-k="seguir">0</b><small>enviados hace más de 2 días</small></article>
+      </div>
+      <div class="chips" role="group" aria-label="Filtrar" data-filtros>
+        <button type="button" data-f="todos" aria-pressed="true">Todos</button>
+        <button type="button" data-f="Enviado" aria-pressed="false">Enviados</button>
+        <button type="button" data-f="Aceptado" aria-pressed="false">Aceptados</button>
+        <button type="button" data-f="Rechazado" aria-pressed="false">No aceptados</button>
+        <button type="button" data-f="Borrador" aria-pressed="false">Borradores</button>
+      </div>
+      <ul class="filas" data-filas></ul>
+    </section>
+
+    <!-- PRECIOS -->
+    <section data-vista="precios" aria-labelledby="t-precios" hidden>
+      <h1 id="t-precios" class="v-tit">Lista de precios</h1>
+      <p class="v-sub">Son los trabajos que elegís al armar un presupuesto. Cuando aumentan los materiales, subís todo de una vez.</p>
+      <form class="aumento caja" data-aumento>
+        <label class="campo"><span>Aumentar todo</span><input name="pct" type="number" inputmode="decimal" min="-50" max="200" step="0.5" value="8"></label>
+        <span class="aumento-pct">%</span>
+        <button class="btn btn-amarillo" type="submit">Aplicar</button>
+        <p class="aumento-ej" data-aumento-ej></p>
+      </form>
+      <ul class="cat" data-cat></ul>
+      <button class="btn btn-line btn-sm" type="button" data-cat-nuevo>+ Agregar trabajo</button>
+    </section>
+
+    <!-- DATOS -->
+    <section data-vista="datos" aria-labelledby="t-datos" hidden>
+      <h1 id="t-datos" class="v-tit">Mis datos</h1>
+      <p class="v-sub">Salen arriba de cada presupuesto.</p>
+      <form class="caja formu-datos" data-datos novalidate autocomplete="off">
+        <label class="campo"><span>Nombre del negocio</span><input name="nombre" maxlength="40"></label>
+        <div class="dos-col">
+          <label class="campo"><span>CUIT</span><input name="cuit" maxlength="15" inputmode="numeric"></label>
+          <label class="campo"><span>Condición frente al IVA</span><select name="condicion"><option>Monotributo</option><option>Responsable inscripto</option></select></label>
+        </div>
+        <div class="dos-col">
+          <label class="campo"><span>WhatsApp</span><input name="tel" maxlength="20" inputmode="tel"></label>
+          <label class="campo"><span>Email</span><input name="email" maxlength="60" inputmode="email"></label>
+        </div>
+        <label class="campo"><span>Dirección</span><input name="dir" maxlength="80"></label>
+      </form>
+    </section>
+  </main>
+
+  <p class="toast" data-toast role="status" hidden></p>
+  <script defer src="../precios.js?v=20261022"></script>
+  <script defer src="presu.js?v=20261022"></script>
+</body>
+</html>
